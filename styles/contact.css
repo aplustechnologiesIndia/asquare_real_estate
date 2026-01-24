@@ -1,0 +1,100 @@
+/* Contact Section */
+.contact-section {
+    padding: 100px 5%;
+    background: #050505;
+    border-top: 1px solid #1a1a1a;
+}
+
+.contact-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-section .eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.contact-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+/* Gold Line */
+.gold-line {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 15px auto 0;
+}
+
+/* Contact Layout */
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Contact Info */
+.contact-info .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.contact-info .logo span {
+    color: var(--gold);
+}
+
+.contact-info p {
+    margin: 12px 0;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.contact-info strong {
+    color: var(--white);
+}
+
+/* Contact Links */
+.contact-links h4 {
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.contact-links a {
+    display: block;
+    color: var(--gray);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .contact-info .logo {
+        margin: 0 auto 20px;
+    }
+}

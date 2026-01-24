@@ -1,0 +1,108 @@
+/* Blog Section */
+.blog-section {
+    padding: 100px 5%;
+}
+
+.blog-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog-section .eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.blog-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+/* Gold Line */
+.gold-line {
+    width: 50px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto 0;
+}
+
+/* Blog Grid */
+.blog-section .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+/* Blog Card */
+.blog-card {
+    background: var(--charcoal);
+    border: 1px solid #222;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+}
+
+.blog-card:hover .blog-img {
+    filter: brightness(1.1);
+}
+
+/* Blog Image */
+.blog-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Blog Content */
+.blog-content {
+    padding: 30px;
+}
+
+.blog-content small {
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.blog-content h4 {
+    font-family: 'Playfair Display', serif;
+    margin: 15px 0;
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.blog-content p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.blog-content a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.blog-content a:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}

@@ -178,17 +178,16 @@ body {
 /* ==============
    NAVBAR
    ============== */
-
-.navbar {
+   .navbar {
+    padding: 30px 5%; /* Increased vertical padding from 20px */
+    height: 100px;    /* Defined a clear height for consistency */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
     position: fixed;
     width: 100%;
     z-index: 100;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
-    transition: all 0.3s ease;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
 }
 
 .logo {
@@ -361,4 +360,111 @@ section {
     .btn-outline {
         margin-left: 0;
     }
+}
+
+
+
+
+
+/* Luxury Entrance Animation */
+@keyframes revealBranding {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.reveal-item {
+    opacity: 0; /* Hidden initially for animation */
+    animation: revealBranding 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+.logo img {
+    height: 40px; /* Standard height for the navbar */
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.branding-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+}
+
+.company-tagline {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 60px; /* Significant increase for better visibility */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Ensure the menu toggle stays aligned on mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5%;
+        height: 80px;
+    }
+    
+    .navbar .logo img {
+        height: 45px; /* Slightly smaller for mobile screens */
+    }
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Update Preloader Logo Size */
+.loader-logo .logo img {
+    height: 80px; /* Increased from standard size */
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* Ensure the loader bar width matches the new logo presence */
+#loaderBar {
+    width: 0%;
+    height: 3px; /* Slightly thicker for better visibility */
+    background: var(--gold);
+    margin: 0 auto; /* Center it under the logo */
+    max-width: 250px; /* Limits the bar width so it doesn't look too long */
+    transition: 1.5s;
 }

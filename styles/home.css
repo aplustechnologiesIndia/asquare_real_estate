@@ -60,3 +60,86 @@
     text-transform: uppercase; 
     color: var(--gray); 
 }
+
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-top: 60px; /* Space for the larger navbar */
+}
+
+/* Ensure the branding stack is perfectly centered */
+.branding-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Slightly more gap for larger text */
+    margin-bottom: 30px;
+}
+
+/* Optional: Slight glow effect on the hero logo for luxury feel */
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+    
+    .company-tagline {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+    
+    .branding-stack img {
+        height: 120px !important; /* Scale down logo for mobile */
+    }
+}
+
+
+.company-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem; /* Increased from 1.8rem */
+    letter-spacing: 12px; /* Doubled for a more expansive, luxury feel */
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+    font-weight: 700;
+}
+
+.company-tagline {
+    font-size: 1.1rem; /* Increased from 0.75rem */
+    letter-spacing: 5px; /* Increased for readability at larger size */
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Refined Cinematic Animation */
+@keyframes revealBranding {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Base class for animated items */
+.reveal-item {
+    opacity: 0;
+    will-change: transform, opacity; /* Performance optimization for smoother frames */
+    animation: revealBranding 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}

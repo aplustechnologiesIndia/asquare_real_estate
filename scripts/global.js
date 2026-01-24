@@ -1,11 +1,12 @@
 // scripts/global.js
 // Assemble scrollable page from fragments
 
+// Ensure this remains in scripts/global.js
 const sectionsToLoad = [
     'home',
-    'about',
-    'collection',      // corresponds to #listings
-    'concierge',       // includes #concierge + #testimonials
+    'about', // This will now fetch your redesigned about.html
+    'collection',
+    'concierge',
     'calculator',
     'blog',
     'contact'

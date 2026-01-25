@@ -468,3 +468,29 @@ section {
     max-width: 250px; /* Limits the bar width so it doesn't look too long */
     transition: 1.5s;
 }
+
+
+
+
+
+/* Add to GLOBAL UI section in global.css */
+
+/* 1. Prevent background scrolling when an article modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* 2. Adjust section padding for the new Reviews -> Journal flow */
+section {
+    padding: 100px 5%;
+    scroll-margin-top: 100px; /* Aligns perfectly with your 100px navbar */
+}
+
+/* 3. High-end scrollbar for the long-form blog articles */
+#blogModalContent::-webkit-scrollbar {
+    width: 4px;
+}
+#blogModalContent::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 10px;
+}

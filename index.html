@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC ESTATES | Luxury Real Estate</title>
+    <title>A SQUAREE | Luxury Real Estate</title>
     
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
-    <!-- Global CSS -->
     <link rel="stylesheet" href="styles/global.css">
 
-    <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         emailjs.init("YOUR_PUBLIC_KEY");
@@ -29,7 +26,6 @@
 </head>
 <body>
 
-    <!-- Preloader -->
     <div id="preloader">
         <div class="loader-logo">
             <div class="logo">
@@ -41,15 +37,54 @@
         </div>
     </div>
 
-    <!-- Popups (Lead + Property Modal) -->
-    <!-- (keep your full popup HTML here - unchanged) -->
+    <!-- Property Modal -->
+    <div id="propertyModal" class="popup-overlay">
+        <div class="popup-content property-detailed-window">
+            <button class="close-popup" onclick="closePropertyModal()">✕ Close</button>
+            
+            <div class="modal-body">
+                <div class="gallery-container">
+                    <div id="mainGalleryImg" class="main-img"></div>
+                    <div class="thumb-grid" id="thumbGrid">
+                    </div>
+                </div>
 
-    <!-- WhatsApp -->
+                <div class="details-pane">
+                    <h3 id="modalTitle" class="gold-text">Property Title</h3>
+                    <p id="modalLocation" class="location-tag">Location</p>
+                    <div class="gold-line" style="margin: 15px 0; width: 40px;"></div>
+                    <p id="modalDesc" class="full-description">Detailed description text...</p>
+                    <div class="modal-amenities" id="modalAmenities"></div>
+                    <a href="#contact" class="btn btn-gold" onclick="closePropertyModal()">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Modal -->
+    <div id="blogModal" class="popup-overlay">
+        <div class="popup-content property-detailed-window">
+            <button class="close-popup" onclick="closeBlogModal()">✕ Close</button>
+            <div class="modal-body">
+                <div class="gallery-container">
+                    <div id="blogMainImg" class="main-img"></div>
+                    <div class="thumb-grid" id="blogThumbGrid"></div>
+                </div>
+                <div class="details-pane">
+                    <h3 id="blogModalTitle" class="gold-text">Article Title</h3>
+                    <div class="gold-line" style="margin: 15px 0; width: 40px;"></div>
+                    <div id="blogModalContent" class="full-description" style="overflow-y: auto; max-height: 300px;">
+                    </div>
+                    <button class="btn btn-outline" onclick="closeBlogModal()" style="margin-top: 20px;">Back to Journal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <a href="https://wa.me/91XXXXXXXXXX?text=I%27m%20interested%20in%20a%20property" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat">
     </a>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="#home">
@@ -62,25 +97,22 @@
         <div class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About Us</a> 
-            <a href="#listings">Curated Collection</a>
-            <a href="#concierge">Concierge</a>
+            <a href="#listings">Focus Projects</a>
+            <a href="#blog">Journal</a> 
             <a href="#contact" class="nav-cta">Enquire</a>
         </div>
     </nav>
 
-    <!-- ✅ EMPTY CONTAINER TO RECEIVE ALL SECTIONS -->
     <main id="app-content">
-        <!-- Sections will be appended here in order -->
     </main>
 
-    <!-- Back-to-Top -->
     <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
 
-    <!-- ✅ LOAD GLOBAL JS LAST -->
     <script src="scripts/global.js"></script>
+    
 </body>
 </html>

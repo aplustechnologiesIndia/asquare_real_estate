@@ -106,3 +106,51 @@
     color: var(--gold);
     border-color: var(--gold);
 }
+
+
+
+
+/* Update styles/blog.css */
+
+/* Modal Specific Adjustments for Blog */
+#blogModal .popup-content {
+    max-width: 1100px;
+    width: 95%;
+    padding: 0;
+    overflow: hidden;
+}
+
+#blogModal .modal-body {
+    display: flex;
+    flex-direction: row;
+    height: 75vh; /* Fixed height for consistent reading experience */
+}
+
+#blogModal .details-pane {
+    flex: 1;
+    padding: 50px;
+    overflow-y: auto; /* Allows long articles to scroll within the pane */
+    background: var(--black);
+}
+
+#blogModal .full-description {
+    white-space: pre-line; /* Preserves paragraph spacing from blogData */
+    margin-bottom: 30px;
+}
+
+/* Gallery styling for Blog */
+#blogModal .gallery-container {
+    flex: 1;
+    border-right: 1px solid #222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 850px) {
+    #blogModal .modal-body {
+        flex-direction: column;
+        height: 90vh;
+    }
+    #blogModal .gallery-container {
+        height: 300px;
+    }
+}

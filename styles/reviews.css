@@ -1,36 +1,4 @@
-/* Concierge Section */
-.concierge-section {
-    padding: 100px 5%;
-    background: var(--charcoal);
-    border-top: 1px solid #222;
-    text-align: center;
-}
-
-.concierge-section .container {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.concierge-section .eyebrow {
-    color: var(--gold);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.concierge-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin: 20px 0;
-}
-
-.concierge-section p {
-    color: var(--gray);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Testimonials Section */
+/* Reviews Section */
 .testimonials {
     padding: 100px 5%;
     background: var(--black);
@@ -63,6 +31,11 @@
     padding: 40px;
     border: 1px solid #222;
     background: var(--charcoal);
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: var(--gold);
 }
 
 .testimonial-card p {

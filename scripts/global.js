@@ -1,14 +1,13 @@
 // scripts/global.js
 // Assemble scrollable page from fragments
 
-// Ensure this remains in scripts/global.js
+// Updated sectionsToLoad: removed concierge & calculator, added reviews
 const sectionsToLoad = [
     'home',
-    'about', // This will now fetch your redesigned about.html
+    'about',        // This will now fetch your redesigned about.html
     'collection',
-    'concierge',
-    'calculator',
-    'blog',
+    'reviews',      // New section for testimonials
+    'blog',         // Renamed navigation target: Journal
     'contact'
 ];
 
@@ -24,21 +23,12 @@ async function assemblePage() {
             if (!response.ok) throw new Error(`${section} not found`);
             const html = await response.text();
 
-            // // Create container and inject
-            // const sectionDiv = document.createElement('div');
-            // sectionDiv.innerHTML = html.trim();
-            // appContent.appendChild(sectionDiv.firstElementChild || sectionDiv);
-
-
-
-            // Corrected logic in scripts/global.js
-const sectionDiv = document.createElement('div');
-sectionDiv.innerHTML = html.trim();
-
-// Use a loop or spread to append all child elements
-while (sectionDiv.firstChild) {
-    appContent.appendChild(sectionDiv.firstChild);
-}
+            // Corrected logic: append all child nodes to avoid wrapper div
+            const sectionDiv = document.createElement('div');
+            sectionDiv.innerHTML = html.trim();
+            while (sectionDiv.firstChild) {
+                appContent.appendChild(sectionDiv.firstChild);
+            }
 
             // Load CSS once
             if (!loadedAssets.has(`${section}-css`)) {
@@ -88,9 +78,20 @@ function toggleMenu() {
 }
 
 // Popup functions (global)
-function closePopup() { document.getElementById('leadPopup')?.classList.remove('active'); }
-function triggerDemoPopup() { document.getElementById('leadPopup')?.classList.add('active'); }
-function closePropertyModal() { document.getElementById('propertyModal')?.classList.remove('active'); }
+function closePopup() { 
+    document.getElementById('leadPopup')?.classList.remove('active'); 
+}
+function triggerDemoPopup() { 
+    document.getElementById('leadPopup')?.classList.add('active'); 
+}
+function closePropertyModal() { 
+    document.getElementById('propertyModal')?.classList.remove('active'); 
+}
+
+// ✅ New: Blog modal close handler
+function closeBlogModal() { 
+    document.getElementById('blogModal')?.classList.remove('active'); 
+}
 
 // EmailJS form handler
 function handleFormSubmit(e) {

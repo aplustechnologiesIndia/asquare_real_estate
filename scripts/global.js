@@ -36,6 +36,13 @@ async function assemblePage() {
                         }
                     }, 100);
                 }
+                if (section === 'about') {
+                    setTimeout(() => {
+                        if (typeof initAboutReveal === "function") {
+                            initAboutReveal();
+                        }
+                    }, 100);
+                }
             }
 
             // Load CSS once

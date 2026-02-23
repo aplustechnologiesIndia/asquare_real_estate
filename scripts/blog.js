@@ -1,112 +1,147 @@
-// scripts/blog.js
+const journalData = [
+{
+id:1,
+category:"First Time Buyer Guide",
+title:"First Time Home Buyer Guide in India (2026) – Complete Step-by-Step Process",
+excerpt:"Complete step-by-step guide covering budgeting, home loan eligibility, legal checks and long-term property planning in India.",
+content:`
+<h3>First Time Home Buyer Guide in India (2026)</h3>
 
-const blogData = [
-    {
-        id: 'blog-1',
-        title: "Investment Hotspots in Mumbai 2026",
-        thumbnail: "https://images.unsplash.com/photo-1582407947304-fd86f028f716",
-        shortDesc: "Exploring the rise of ultra-luxury vertical estates in South Mumbai's evolving skyline and why timing is critical.",
-        fullArticle: "Full detailed text for Mumbai 2026 goes here... (your 1000+ words of content)",
-        gallery: [
-            "https://images.unsplash.com/photo-1582407947304-fd86f028f716",
-            "https://images.unsplash.com/photo-1600585154340-be6199f7e009",
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
-        ]
-    },
-    {
-        id: 'blog-2',
-        title: "The Art of Bespoke Interior Design",
-        thumbnail: "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e",
-        shortDesc: "How Indian heritage architecture is meeting modern minimalism in luxury villas across the subcontinent.",
-        fullArticle: "Full detailed text for Interior Design goes here...",
-        gallery: [
-            "https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e",
-            "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
-            "https://images.unsplash.com/photo-1512915922611-e211c3f350c1",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
-        ]
-    },
-    {
-        id: 'blog-3',
-        title: "Sustainability in Luxury Housing",
-        thumbnail: "https://images.unsplash.com/photo-1512915922611-e211c3f350c1",
-        shortDesc: "Green certifications are becoming the new gold standard for discerning ultra-high-net-worth investors.",
-        fullArticle: "Full detailed text for Sustainability goes here...",
-        gallery: [
-            "https://images.unsplash.com/photo-1512915922611-e211c3f350c1",
-            "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-            "https://images.unsplash.com/photo-1582407947304-fd86f028f716"
-        ]
-    }
+<p>Buying your first home is a major emotional and financial milestone. A structured process ensures safe real estate investment.</p>
+
+<h4>Step 1: Budget & Home Loan Eligibility</h4>
+<p>Plan down payment (10–20%), EMI affordability (below 40% income), registration and stamp duty charges before shortlisting property.</p>
+
+<h4>Step 2: Choose the Right Location</h4>
+<p>Select areas with strong connectivity, schools, hospitals and upcoming infrastructure projects for better appreciation.</p>
+
+<h4>Step 3: Legal Verification</h4>
+<p>Verify RERA registration, title deed clarity, occupancy certificate and approved building plans.</p>
+
+<h4>Step 4: Long-Term Vision</h4>
+<p>Buy with a 5–10 year investment mindset. Real estate builds generational wealth.</p>
+`
+},
+{
+id:2,
+category:"Investment Insights",
+title:"Why Real Estate is the Best Investment for First Time Buyers in India",
+excerpt:"Discover why real estate offers rental income, property appreciation and tax benefits for first-time investors.",
+content:`
+<h3>Why Real Estate is the Best Investment in India</h3>
+
+<p>Real estate remains one of the safest and most profitable long-term investments.</p>
+
+<h4>Physical Asset</h4>
+<p>Property is tangible and usable, unlike stocks or digital assets.</p>
+
+<h4>Rental Income</h4>
+<p>Generate passive income while the asset appreciates.</p>
+
+<h4>Property Appreciation</h4>
+<p>Growing cities increase property value significantly over time.</p>
+
+<h4>Tax Benefits</h4>
+<p>Home loan principal and interest repayments offer tax advantages.</p>
+`
+},
+{
+id:3,
+category:"Buyer Awareness",
+title:"7 Common Mistakes First Time Home Buyers Must Avoid",
+excerpt:"Avoid costly financial mistakes when buying your first property in India.",
+content:`
+<h3>7 Common Mistakes First Time Buyers Must Avoid</h3>
+
+<h4>Ignoring Total Cost</h4>
+<p>Consider GST, stamp duty, maintenance deposit and interior costs.</p>
+
+<h4>Taking Maximum Loan</h4>
+<p>Approval limit does not mean affordability.</p>
+
+<h4>Not Checking Builder Reputation</h4>
+<p>Research delivery record and past projects.</p>
+
+<h4>No Resale Planning</h4>
+<p>Think about future exit value.</p>
+
+<h4>Buying Emotionally</h4>
+<p>Think like an investor, not only a homeowner.</p>
+`
+},
+{
+id:4,
+category:"Investment Strategy",
+title:"How to Choose the Right Property for Investment in 2026",
+excerpt:"Guide to selecting high-growth locations and comparing ready vs under-construction property.",
+content:`
+<h3>How to Choose the Right Property for Investment in 2026</h3>
+
+<h4>High Growth Areas</h4>
+<p>Look near metro stations, IT hubs, business districts and expressways.</p>
+
+<h4>Under Construction Property</h4>
+<p>Lower entry cost and higher appreciation potential.</p>
+
+<h4>Ready to Move Property</h4>
+<p>No waiting period and immediate rental income.</p>
+
+<p>Align property purchase with financial goals.</p>
+`
+},
+{
+id:5,
+category:"Expert Advice",
+title:"Real Estate Investment Tips for First Time Buyers (Expert Advice)",
+excerpt:"Expert tips on building wealth through property and minimizing investment risk.",
+content:`
+<h3>Real Estate Investment Tips for First Time Buyers</h3>
+
+<h4>Start Early</h4>
+<p>Earlier investment leads to stronger long-term appreciation.</p>
+
+<h4>Think Long Term</h4>
+<p>Hold property for 5–10 years minimum.</p>
+
+<h4>Diversify Later</h4>
+<p>After first home, explore commercial, rental or plot investments.</p>
+
+<h4>Take Professional Advisory</h4>
+<p>Expert guidance helps negotiate better prices and plan exit strategy.</p>
+`
+}
 ];
 
-function renderBlog() {
-    const grid = document.getElementById('blog-grid');
-    if (!grid) return;
-    grid.innerHTML = '';
+function renderJournal(){
+const grid=document.getElementById("journal-grid");
+if(!grid) return;
 
-    blogData.forEach(post => {
-        const card = document.createElement('div');
-        card.className = 'blog-card';
-        // Making the whole card clickable
-        card.onclick = () => openBlogModal(post.id);
+journalData.forEach(post=>{
+const card=document.createElement("div");
+card.className="journal-card";
+card.onclick=()=>openJournalModal(post.id);
 
-        card.innerHTML = `
-            <div class="blog-img" style="background-image: url('${post.thumbnail}')"></div>
-            <div class="blog-content">
-                <small>Market Insights</small>
-                <h4>${post.title}</h4>
-                <p>${post.shortDesc}</p>
-                <button class="btn btn-outline" style="padding: 10px 20px; font-size: 0.7rem;">Read Full Article</button>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
+card.innerHTML=`
+<div class="journal-category">${post.category}</div>
+<div class="journal-title">${post.title}</div>
+<div class="journal-excerpt">${post.excerpt}</div>
+<div class="journal-read">Read Article</div>
+`;
+
+grid.appendChild(card);
+});
 }
 
-// Updated Modal Interaction Logic
-window.openBlogModal = function(id) {
-    const post = blogData.find(p => p.id === id);
-    if (!post) return;
+function openJournalModal(id){
+const post=journalData.find(p=>p.id===id);
+if(!post) return;
 
-    // Update Text Content
-    document.getElementById('blogModalTitle').innerText = post.title;
-    document.getElementById('blogModalContent').innerText = post.fullArticle;
-    
-    // Set Initial Main Image to first gallery image
-    const mainImg = document.getElementById('blogMainImg');
-    mainImg.style.backgroundImage = `url('${post.gallery[0]}')`;
-
-    // Populate Gallery Thumbnails (up to 4 total images)
-    const thumbGrid = document.getElementById('blogThumbGrid');
-    thumbGrid.innerHTML = '';
-    
-    // Limit to first 4 images in gallery
-    const displayImages = post.gallery.slice(0, 4);
-    
-    displayImages.forEach(imgUrl => {
-        const thumb = document.createElement('div');
-        thumb.className = 'thumb';
-        thumb.style.backgroundImage = `url('${imgUrl}')`;
-        
-        thumb.onclick = (e) => {
-            e.stopPropagation();
-            // Update main image to clicked thumbnail
-            mainImg.style.backgroundImage = `url('${imgUrl}')`;
-        };
-        thumbGrid.appendChild(thumb);
-    });
-
-    // Show the Modal
-    document.getElementById('blogModal').classList.add('active');
-};
-
-// Initialize
-if (document.getElementById('blog-grid')) {
-    renderBlog();
-} else {
-    // If global.js is still assembling, wait a moment
-    setTimeout(renderBlog, 500); 
+document.getElementById("journalArticle").innerHTML=post.content;
+document.getElementById("journalModal").classList.add("active");
 }
+
+function closeJournalModal(){
+document.getElementById("journalModal").classList.remove("active");
+}
+
+document.addEventListener("DOMContentLoaded",renderJournal);

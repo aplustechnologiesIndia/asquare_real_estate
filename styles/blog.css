@@ -1,156 +1,164 @@
-/* Blog Section */
-.blog-section {
-    padding: 100px 5%;
+/* ===============================
+   Journal Section
+=============================== */
+
+.journal-section {
+    padding: 120px 5%;
 }
 
-.blog-section .container {
-    max-width: 1200px;
+.journal-section .container {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.blog-section .section-title {
+.section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
-.blog-section .eyebrow {
+.eyebrow {
     color: var(--gold);
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
-.blog-section h2 {
+.journal-section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-top: 10px;
+    font-size: 2.7rem;
+    margin-top: 15px;
 }
 
-/* Gold Line */
-.gold-line {
-    width: 50px;
-    height: 2px;
-    background: var(--gold);
-    margin: 20px auto 0;
-}
+/* ===============================
+   Grid
+=============================== */
 
-/* Blog Grid */
-.blog-section .grid {
+.journal-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 60px;
 }
 
-/* Blog Card */
-.blog-card {
+/* ===============================
+   Journal Card
+=============================== */
+
+.journal-card {
+    padding: 45px;
+    border: 1px solid #1a1a1a;
     background: var(--charcoal);
-    border: 1px solid #222;
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border-radius: 4px;
-    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-.blog-card:hover {
-    transform: translateY(-10px);
+.journal-card:hover {
     border-color: var(--gold);
+    transform: translateY(-6px);
 }
 
-.blog-card:hover .blog-img {
-    filter: brightness(1.1);
-}
-
-/* Blog Image */
-.blog-img {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Blog Content */
-.blog-content {
-    padding: 30px;
-}
-
-.blog-content small {
+.journal-category {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
     color: var(--gold);
     text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-}
-
-.blog-content h4 {
-    font-family: 'Playfair Display', serif;
-    margin: 15px 0;
-    font-size: 1.4rem;
-    color: var(--white);
-}
-
-.blog-content p {
-    color: var(--gray);
-    font-size: 0.9rem;
     margin-bottom: 20px;
-    line-height: 1.6;
 }
 
-.blog-content a {
-    color: var(--white);
-    text-decoration: none;
+.journal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.journal-excerpt {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+}
+
+.journal-read {
     font-size: 0.75rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white);
     border-bottom: 1px solid var(--gold);
-    padding-bottom: 5px;
-    transition: all 0.3s ease;
+    display: inline-block;
+    padding-bottom: 4px;
 }
 
-.blog-content a:hover {
-    color: var(--gold);
-    border-color: var(--gold);
+/* ===============================
+   Modal
+=============================== */
+
+.journal-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
-
-
-
-/* Update styles/blog.css */
-
-/* Modal Specific Adjustments for Blog */
-#blogModal .popup-content {
-    max-width: 1100px;
-    width: 95%;
-    padding: 0;
-    overflow: hidden;
-}
-
-#blogModal .modal-body {
+.journal-modal.active {
     display: flex;
-    flex-direction: row;
-    height: 75vh; /* Fixed height for consistent reading experience */
 }
 
-#blogModal .details-pane {
-    flex: 1;
-    padding: 50px;
-    overflow-y: auto; /* Allows long articles to scroll within the pane */
-    background: var(--black);
+.journal-modal-content {
+    width: 90%;
+    max-width: 850px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: #0f0f0f;
+    padding: 60px;
+    border: 1px solid #222;
+    position: relative;
 }
 
-#blogModal .full-description {
-    white-space: pre-line; /* Preserves paragraph spacing from blogData */
+.journal-close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.journal-close:hover {
+    color: var(--gold);
+}
+
+/* Article Typography */
+
+#journalArticle h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
     margin-bottom: 30px;
 }
 
-/* Gallery styling for Blog */
-#blogModal .gallery-container {
-    flex: 1;
-    border-right: 1px solid #222;
+#journalArticle h4 {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: var(--gold);
+    letter-spacing: 1px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 850px) {
-    #blogModal .modal-body {
-        flex-direction: column;
-        height: 90vh;
-    }
-    #blogModal .gallery-container {
-        height: 300px;
+#journalArticle p {
+    color: var(--gray);
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+#journalArticle strong {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .journal-modal-content {
+        padding: 40px 25px;
     }
 }

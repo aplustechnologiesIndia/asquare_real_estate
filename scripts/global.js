@@ -33,7 +33,7 @@ async function assemblePage() {
                 appContent.appendChild(wrapper.firstChild);
             }
 
-            // Load CSS
+            // Load CSS once
             if (!loadedAssets.has(`${section}-css`)) {
                 const link = document.createElement('link');
                 link.rel = 'stylesheet';
@@ -42,26 +42,14 @@ async function assemblePage() {
                 loadedAssets.add(`${section}-css`);
             }
 
-            // Load JS
+            // Load JS once
             if (!loadedAssets.has(`${section}-js`)) {
-                const script = document.createElement('script');
-                script.src = `scripts/${section}.js`;
-
-                script.onload = () => {
-                    loadedAssets.add(`${section}-js`);
-
-                    // 🔥 Initialize section-specific logic AFTER script loads
-                    if (section === 'home' && typeof initHomeStats === "function") {
-                        initHomeStats();
-                    }
-
-                    if (section === 'about' && typeof initAboutReveal === "function") {
-                        initAboutReveal();
-                    }
-                };
-
-                document.body.appendChild(script);
+                await loadScript(`scripts/${section}.js`);
+                loadedAssets.add(`${section}-js`);
             }
+
+            // 🔥 Initialize section AFTER HTML + JS loaded
+            initSection(section);
 
         } catch (err) {
             console.error(`Failed to load ${section}:`, err);
@@ -69,10 +57,46 @@ async function assemblePage() {
     }
 
     // Global behaviors
-    setTimeout(() => {
-        initSmoothScroll();
-        initReveal();
-    }, 200);
+    initSmoothScroll();
+    initReveal();
+}
+
+// ===============================
+// SCRIPT LOADER (awaitable)
+// ===============================
+
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+    });
+}
+
+// ===============================
+// SECTION INITIALIZER
+// ===============================
+
+function initSection(section) {
+
+    if (section === 'home' && typeof initHomeStats === "function") {
+        initHomeStats();
+    }
+
+    if (section === 'about' && typeof initAboutReveal === "function") {
+        initAboutReveal();
+    }
+
+    // 🔥 IMPORTANT FIX FOR JOURNAL
+    if (section === 'blog' && typeof renderJournal === "function") {
+        renderJournal();
+    }
+
+    if (section === 'enquire' && typeof initEnquireForm === "function") {
+        initEnquireForm();
+    }
 }
 
 // ===============================
@@ -87,7 +111,7 @@ function initSmoothScroll() {
 
             if (target) {
                 e.preventDefault();
-                const offset = 80; // navbar height
+                const offset = 80;
                 const position = target.getBoundingClientRect().top + window.scrollY - offset;
 
                 window.scrollTo({
@@ -100,7 +124,7 @@ function initSmoothScroll() {
 }
 
 // ===============================
-// SCROLL REVEAL (GLOBAL)
+// SCROLL REVEAL
 // ===============================
 
 function initReveal() {
@@ -119,7 +143,7 @@ function initReveal() {
 }
 
 // ===============================
-// MOBILE NAV TOGGLE
+// MOBILE NAV
 // ===============================
 
 function toggleMenu() {
@@ -127,19 +151,11 @@ function toggleMenu() {
 }
 
 // ===============================
-// POPUPS
+// MODALS
 // ===============================
 
-function closePopup() {
-    document.getElementById('leadPopup')?.classList.remove('active');
-}
-
-function triggerDemoPopup() {
-    document.getElementById('leadPopup')?.classList.add('active');
-}
-
 function closeBlogModal() {
-    document.getElementById('blogModal')?.classList.remove('active');
+    document.getElementById('journalModal')?.classList.remove('active');
 }
 
 // ===============================
@@ -151,9 +167,8 @@ function handleFormSubmit(e) {
 
     emailjs.sendForm('default_service', 'template_abc', e.target)
         .then(() => {
-            document.getElementById('formContainer').style.display = 'none';
-            document.getElementById('successMessage').style.display = 'block';
-            setTimeout(closePopup, 2500);
+            alert("Thank you. We will contact you shortly.");
+            e.target.reset();
         })
         .catch(err => {
             alert('Submission failed. Please try again.');
@@ -180,7 +195,7 @@ window.addEventListener('load', () => {
 });
 
 // ===============================
-// BACK TO TOP BUTTON
+// BACK TO TOP
 // ===============================
 
 window.addEventListener('scroll', () => {
@@ -191,7 +206,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===============================
-// START EVERYTHING
+// START
 // ===============================
 
 document.addEventListener('DOMContentLoaded', assemblePage);

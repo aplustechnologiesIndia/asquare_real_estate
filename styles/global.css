@@ -220,6 +220,13 @@ body {
     border: 1px solid var(--gold);
     padding: 10px 20px;
     border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* GOLD HOVER EFFECT */
+.nav-cta:hover {
+    background: var(--gold);
+    color: var(--black);
 }
 
 /* Hamburger Menu */

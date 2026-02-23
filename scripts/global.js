@@ -28,6 +28,14 @@ async function assemblePage() {
             sectionDiv.innerHTML = html.trim();
             while (sectionDiv.firstChild) {
                 appContent.appendChild(sectionDiv.firstChild);
+                // If home section loaded, initialize its animations
+                if (section === 'home') {
+                    setTimeout(() => {
+                        if (typeof initHomeStats === "function") {
+                            initHomeStats();
+                        }
+                    }, 100);
+                }
             }
 
             // Load CSS once

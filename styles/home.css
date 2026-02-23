@@ -39,28 +39,50 @@
 
 /* Stats Bar */
 .stats-bar {
-    background: var(--charcoal); 
-    display: flex; 
+    background: var(--charcoal);
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 50px 10%; 
-    border-top: 1px solid #222; 
+    justify-content: space-between;
+    padding: 80px 10%;
+    border-top: 1px solid #222;
     border-bottom: 1px solid #222;
+    text-align: center;
 }
 
-.stat-item h4 { 
-    font-family: 'Playfair Display', serif; 
-    color: var(--gold); 
-    font-size: 2rem; 
+.stat-item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(40px);
+    transition: all 0.5s ease;
 }
 
-.stat-item p { 
-    font-size: 0.7rem; 
-    text-transform: uppercase; 
-    color: var(--gray); 
+.stat-item.animate {
+    opacity: 0;
+    transform: translateY(40px);
 }
 
+.stat-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--gray);
+    letter-spacing: 2px;
+}
 
 
 .hero-container {

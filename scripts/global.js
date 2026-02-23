@@ -8,6 +8,7 @@ const sectionsToLoad = [
     'collection',
     'reviews',
     'blog',
+    'enquire',
     'contact'
 ];
 

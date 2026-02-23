@@ -1,0 +1,159 @@
+/* ===============================
+   Enquire Section
+=============================== */
+
+.enquire-section {
+    padding: 120px 5%;
+    background: #0b0b0b;
+}
+
+.enquire-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.enquire-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+/* ===============================
+   Left Info
+=============================== */
+
+.enquire-info p {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.enquire-details strong {
+    display: block;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.enquire-details p {
+    margin-bottom: 22px;
+    color: var(--white);
+}
+
+.enquire-details a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.enquire-details a:hover {
+    color: var(--gold);
+}
+
+/* ===============================
+   Form
+=============================== */
+
+.enquire-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Input + Textarea */
+
+.enquire-form input,
+.enquire-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 14px 0;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder consistency */
+
+.enquire-form input::placeholder,
+.enquire-form textarea::placeholder {
+    color: #666;
+    font-family: inherit;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* Focus State */
+
+.enquire-form input:focus,
+.enquire-form textarea:focus {
+    border-bottom: 1px solid var(--gold);
+    box-shadow: 0 6px 20px rgba(197,160,89,0.05);
+}
+
+/* Textarea */
+
+.enquire-form textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+/* ===============================
+   Button
+=============================== */
+
+.btn-gold {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle Glow Hover */
+
+.btn-gold:hover {
+    background: var(--gold);
+    color: #000;
+    box-shadow: 0 0 25px rgba(197,160,89,0.4);
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   Success Message
+=============================== */
+
+.form-success {
+    display: none;
+    margin-top: 20px;
+    color: var(--gold);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===============================
+   Responsive
+=============================== */
+
+@media (max-width: 900px) {
+
+    .enquire-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+}

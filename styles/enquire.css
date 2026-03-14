@@ -157,3 +157,69 @@
     }
 
 }
+
+
+
+/* Styling for the new multi-select box */
+.multi-city-select {
+    background: #1a1a1a !important; /* Match popup form style */
+    border: 1px solid #2a2a2a !important;
+    color: var(--white);
+    padding: 10px !important;
+    height: 120px; /* Give enough height to see multiple options */
+    font-family: inherit;
+    outline: none;
+}
+
+.multi-city-select option {
+    padding: 8px;
+    background: #1a1a1a;
+}
+
+.multi-city-select option:checked {
+    background-color: var(--gold) !important;
+    color: #000;
+}
+
+
+
+
+
+
+/* Label styling */
+.dropdown-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--gold);
+    margin-bottom: -15px; /* Adjust spacing for the stack */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Luxury Multi-select Dropdown */
+.city-select {
+    background: #1a1a1a !important;
+    border: none !important;
+    border-bottom: 1px solid #2a2a2a !important;
+    color: var(--white);
+    padding: 10px 0 !important;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    height: 120px; /* Provides height for multiple visible options */
+}
+
+.city-select option {
+    padding: 8px;
+    background: #1a1a1a;
+}
+
+/* Highlight style for selected options */
+.city-select option:checked {
+    background-color: var(--gold) !important;
+    color: #000;
+}
+
+.city-select:focus {
+    border-bottom: 1px solid var(--gold) !important;
+}

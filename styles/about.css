@@ -352,14 +352,11 @@ color: var(--white);
 letter-spacing: 2px;
 font-weight: 500;
 }
-.phil-item:hover {
-background: var(--gold);
-border-color: var(--gold);
-}
 .phil-item:hover i,
 .phil-item:hover span {
-color: var(--black);
+    color: var(--white); /* Changed from black to white */
 }
+
 /* --- Updated Team Section Styles --- */
 .team-wrapper {
 margin-top: 100px;

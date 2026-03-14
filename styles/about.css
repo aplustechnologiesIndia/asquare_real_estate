@@ -456,3 +456,40 @@ font-size: 0.85rem !important;
 .team-card:hover .member-img {
 filter: grayscale(0%);
 }
+
+
+
+
+
+/* Center all titles and set up the hover transition */
+.about-section .section-title, 
+.philosophy-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-section h2, 
+.philosophy-section h3 {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+}
+
+/* Create the hidden line */
+.about-section h2::after, 
+.philosophy-section h3::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    display: block;
+    margin: 10px auto 0;
+    transition: width 0.4s ease;
+}
+
+/* Reveal line on hover */
+.about-section .section-title:hover h2::after,
+.philosophy-section .section-header:hover h3::after {
+    width: 70px;
+}

@@ -438,7 +438,7 @@ section {
 }
 
 .navbar .logo img {
-    height: 90px; /* Significant increase for better visibility */
+    height: 100px; /* Significant increase for better visibility */
     width: auto;
     object-fit: contain;
 }

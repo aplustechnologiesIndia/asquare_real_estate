@@ -438,7 +438,7 @@ section {
 }
 
 .navbar .logo img {
-    height: 100px; /* Significant increase for better visibility */
+    height: 90px; /* Significant increase for better visibility */
     width: auto;
     object-fit: contain;
 }
@@ -451,7 +451,7 @@ section {
     }
     
     .navbar .logo img {
-        height: 45px; /* Slightly smaller for mobile screens */
+        height: 55px; /* Slightly smaller for mobile screens */
     }
 }
 

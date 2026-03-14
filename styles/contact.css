@@ -135,3 +135,23 @@
         padding-top: 0;
     }
 }
+
+
+
+/* Styling for the developer credit line */
+.contact-bottom p {
+    margin-bottom: 8px; /* Spacing between the two lines */
+    color: var(--white); /* Ensures the 'Managed and Developed by' is white */
+}
+
+.developer-credit a {
+    color: var(--gold) !important; /* Forces the brand name to be golden */
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.developer-credit a:hover {
+    opacity: 0.8; /* Subtle feedback when hovering over the link */
+    text-decoration: underline;
+}

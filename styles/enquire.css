@@ -158,15 +158,95 @@
 
 }
 
+/* ===============================
+   Collapsible City Dropdown (New)
+=============================== */
 
+.collapsible-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-/* Styling for the new multi-select box */
+.dropdown-label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #2a2a2a;
+    color: var(--gold);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-label:hover {
+    color: var(--white);
+}
+
+.dropdown-label i {
+    transition: transform 0.4s ease;
+    font-size: 0.75rem;
+}
+
+.city-select {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border-bottom: none !important;
+    background: #1a1a1a !important;
+    border: 1px solid #2a2a2a !important;
+    color: var(--white);
+    padding: 0 !important;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+/* State when expanded */
+.collapsible-dropdown.active .city-select {
+    max-height: 150px;
+    opacity: 1;
+    padding: 10px !important;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--gold) !important;
+}
+
+.collapsible-dropdown.active .dropdown-label i {
+    transform: rotate(180deg);
+}
+
+/* Multi-select options styling */
+.city-select option {
+    padding: 8px 12px;
+    background: #1a1a1a;
+    color: var(--white);
+}
+
+.city-select option:checked {
+    background-color: var(--gold) !important;
+    color: #000;
+}
+
+.city-select:focus {
+    border-bottom: 1px solid var(--gold) !important;
+}
+
+/* ===============================
+   Legacy Multi-select Styles (Kept for compatibility)
+=============================== */
+
 .multi-city-select {
-    background: #1a1a1a !important; /* Match popup form style */
+    background: #1a1a1a !important;
     border: 1px solid #2a2a2a !important;
     color: var(--white);
     padding: 10px !important;
-    height: 120px; /* Give enough height to see multiple options */
+    height: 120px;
     font-family: inherit;
     outline: none;
 }
@@ -183,43 +263,41 @@
 
 
 
+/* real_estate_project/styles/enquire.css */
 
-
-
-/* Label styling */
-.dropdown-label {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--gold);
-    margin-bottom: -15px; /* Adjust spacing for the stack */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Luxury Multi-select Dropdown */
 .city-select {
+    max-height: 0;
+    opacity: 0;
+    overflow-y: auto; /* Change from 'hidden' to 'auto' to enable scrolling */
+    transition: all 0.4s ease;
+    border-bottom: none !important;
     background: #1a1a1a !important;
-    border: none !important;
-    border-bottom: 1px solid #2a2a2a !important;
+    border: 1px solid #2a2a2a !important;
     color: var(--white);
-    padding: 10px 0 !important;
+    padding: 0 !important;
     font-family: inherit;
     font-size: 1rem;
     outline: none;
-    height: 120px; /* Provides height for multiple visible options */
+    width: 100%;
 }
 
-.city-select option {
-    padding: 8px;
-    background: #1a1a1a;
-}
-
-/* Highlight style for selected options */
-.city-select option:checked {
-    background-color: var(--gold) !important;
-    color: #000;
-}
-
-.city-select:focus {
+/* State when expanded */
+.collapsible-dropdown.active .city-select {
+    max-height: 150px; /* This limits height; overflow-y: auto will now trigger a scrollbar */
+    opacity: 1;
+    padding: 10px !important;
+    margin-top: 10px;
     border-bottom: 1px solid var(--gold) !important;
+}
+
+
+
+/* real_estate_project/styles/enquire.css */
+
+.enquire-section .section-title {
+    text-align: center; /* Centers the text */
+    margin-bottom: 50px; /* Provides consistent spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the flex items (eyebrow, h2, and line) */
 }

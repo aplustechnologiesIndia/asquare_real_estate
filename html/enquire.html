@@ -4,10 +4,9 @@
     <div class="container">
 
         <div class="section-title">
-            <span class="eyebrow">Private Consultation</span>
-            <h2>Begin Your Exclusive Property Journey</h2>
-            <div class="gold-line"></div>
-        </div>
+    <span class="eyebrow">Private Consultation</span>
+    <h2>Begin Your Exclusive Property Journey</h2>
+    <div class="gold-line"></div> </div>
 
         <div class="enquire-grid reveal">
 
@@ -15,7 +14,7 @@
             <div class="enquire-info">
                 <p>
                     Our advisors provide discreet access to premium and 
-                    off-market properties across India’s most sought-after locations.
+                    off-market properties across India's most sought-after locations.
                 </p>
 
                 <div class="enquire-details">
@@ -40,30 +39,34 @@
             </div>
 
             <!-- Right Side Form -->
-           <div class="enquire-form">
-    <form id="enquiryForm">
-        <input type="text" name="name" placeholder="Full Name *" required>
-        <input type="tel" name="phone" placeholder="Phone Number *" required>
-        
-        <input type="email" name="email" placeholder="Email Address">
+            <div class="enquire-form">
+                <form id="enquiryForm">
+                    <input type="text" name="name" placeholder="Full Name *" required>
+                    <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    
+                    <input type="email" name="email" placeholder="Email Address">
 
-        <label class="dropdown-label">Preferred City (Select one or more) *</label>
-        <select name="city" class="city-select" multiple required>
-            <option value="NOIDA">NOIDA</option>
-            <option value="GR NOIDA">GR NOIDA</option>
-            <option value="GURGAON">GURGAON</option>
-            <option value="DELHI">DELHI</option>
-            <option value="GHAZIABAD">GHAZIABAD</option>
-            <option value="ANY">ANY</option>
-        </select>
+                    <div class="collapsible-dropdown">
+                       <label class="dropdown-label" onclick="toggleCityDropdown()">
+        Preferred City <i class="fa-solid fa-chevron-down"></i>
+    </label>
+                        <select name="city" id="citySelect" class="city-select" multiple>
+                            <option value="NOIDA">NOIDA</option>
+                            <option value="GR NOIDA">GR NOIDA</option>
+                            <option value="GURGAON">GURGAON</option>
+                            <option value="DELHI">DELHI</option>
+                            <option value="GHAZIABAD">GHAZIABAD</option>
+                            <option value="ANY">ANY</option>
+                        </select>
+                    </div>
 
-        <textarea name="message" rows="4" placeholder="Tell us about your requirement"></textarea>
+                    <textarea name="message" rows="4" placeholder="Tell us about your requirement"></textarea>
 
-        <button type="submit" class="btn-gold">
-            Request Confidential Callback
-        </button>
-    </form>
-    </div>
+                    <button type="submit" class="btn-gold">
+                        Request Confidential Callback
+                    </button>
+                </form>
+            </div>
         </div>
 
     </div>

@@ -1,147 +1,170 @@
 const journalData = [
-{
-id:1,
-category:"First Time Buyer Guide",
-title:"First Time Home Buyer Guide in India (2026) – Complete Step-by-Step Process",
-excerpt:"Complete step-by-step guide covering budgeting, home loan eligibility, legal checks and long-term property planning in India.",
-content:`
-<h3>First Time Home Buyer Guide in India (2026)</h3>
+    {
+        id: 1,
+        category: "Market Truths",
+        title: "Real Estate vs Reality – Truth Buyers Should Know",
+        excerpt: "Between market expectations and ground reality, there is often a significant gap. Discover the myths vs truths of property investing.",
+        content: `
+            <h3>Real Estate vs Reality – Truth Buyers Should Know</h3>
+            <p class="author-tag">By Asquaree</p>
+            <p>Buying real estate is a dream of security and status, but the gap between hype and reality is often significant. Here are the truths every buyer should know.</p>
+            
+            <h4>1. Myth: Prices Always Go Up</h4>
+            <p><strong>Reality:</strong> Markets move in cycles. Smart buyers focus on location quality and long-term fundamentals rather than short-term price hype.</p>
 
-<p>Buying your first home is a major emotional and financial milestone. A structured process ensures safe real estate investment.</p>
+            <h4>2. Myth: Buying Early Guarantees Profit</h4>
+            <p><strong>Reality:</strong> Profit depends on developer credibility and infrastructure growth, not just timing. Due diligence is more important than being first.</p>
 
-<h4>Step 1: Budget & Home Loan Eligibility</h4>
-<p>Plan down payment (10–20%), EMI affordability (below 40% income), registration and stamp duty charges before shortlisting property.</p>
+            <h4>3. Myth: Bigger Homes are Better Investments</h4>
+            <p><strong>Reality:</strong> Smaller units (like 2 BHKs) often offer higher rental yields and faster liquidity in many urban segments.</p>
 
-<h4>Step 2: Choose the Right Location</h4>
-<p>Select areas with strong connectivity, schools, hospitals and upcoming infrastructure projects for better appreciation.</p>
+            <h4>4. Myth: It is Completely Passive</h4>
+            <p><strong>Reality:</strong> Real estate requires active evaluation of legal approvals, builder reputation, and maintenance costs to remain an asset.</p>
 
-<h4>Step 3: Legal Verification</h4>
-<p>Verify RERA registration, title deed clarity, occupancy certificate and approved building plans.</p>
+            <h4>5. Myth: The Cheapest Deal is Best</h4>
+            <p><strong>Reality:</strong> Low prices often hide poor construction or legal complications. The best property has the strongest fundamentals, not the lowest price.</p>
+        `
+    },
+    {
+        id: 2,
+        category: "Investment Strategy",
+        title: "How to Choose a Profitable Investment Property in 2026",
+        excerpt: "In 2026, the market is data-driven. Learn how to identify growth corridors and evaluate developer credibility for maximum ROI.",
+        content: `
+            <h3>How to Choose a Profitable Investment Property in 2026</h3>
+            <p class="author-tag">By Asquaree</p>
+            <p>Choosing a profitable property today requires a strategy that looks beyond the present neighborhood.</p>
+            
+            <h4>1. Analyze Future Infrastructure</h4>
+            <p>Look for upcoming metro connectivity, expressways, and government development plans. Emerging growth corridors offer the highest appreciation.</p>
 
-<h4>Step 4: Long-Term Vision</h4>
-<p>Buy with a 5–10 year investment mindset. Real estate builds generational wealth.</p>
-`
-},
-{
-id:2,
-category:"Investment Insights",
-title:"Why Real Estate is the Best Investment for First Time Buyers in India",
-excerpt:"Discover why real estate offers rental income, property appreciation and tax benefits for first-time investors.",
-content:`
-<h3>Why Real Estate is the Best Investment in India</h3>
+            <h4>2. Track Employment Hubs</h4>
+            <p>When employment opportunities grow (IT parks, business districts), housing demand naturally follows, driving prices upward.</p>
 
-<p>Real estate remains one of the safest and most profitable long-term investments.</p>
+            <h4>3. Verify Developer Financial Stability</h4>
+            <p>A reliable developer reduces risk of delays. Evaluate their past delivery track record and construction quality.</p>
 
-<h4>Physical Asset</h4>
-<p>Property is tangible and usable, unlike stocks or digital assets.</p>
+            <h4>4. Focus on Liquidity</h4>
+            <p>Invest in properties that match the needs of the largest buyer segment (like homes near employment hubs) for easier resale.</p>
+        `
+    },
+    {
+        id: 3,
+        category: "Finance & Loans",
+        title: "Home Loan Secrets Banks Don’t Tell You",
+        excerpt: "Understanding hidden details about interest structures and prepayments can save you lakhs in interest costs.",
+        content: `
+            <h3>Home Loan Secrets Banks Don’t Tell You</h3>
+            <p class="author-tag">By Asquaree</p>
+            <p>Banks make the process look simple, but these hidden details can change your financial journey.</p>
+            
+            <h4>1. Loan Eligibility is Negotiable</h4>
+            <p>Different banks use different methods to calculate income. Comparing lenders can increase your eligibility substantially.</p>
 
-<h4>Rental Income</h4>
-<p>Generate passive income while the asset appreciates.</p>
+            <h4>2. Interest Rates Move Slowly Downward</h4>
+            <p>While floating rates rise quickly with benchmarks, they often decrease slowly. Understand the structure before signing.</p>
 
-<h4>Property Appreciation</h4>
-<p>Growing cities increase property value significantly over time.</p>
+            <h4>3. The Power of Prepayment</h4>
+            <p>Prepaying just 5-10% of your outstanding loan every year can shorten a 20-year loan by several years and save lakhs in interest.</p>
 
-<h4>Tax Benefits</h4>
-<p>Home loan principal and interest repayments offer tax advantages.</p>
-`
-},
-{
-id:3,
-category:"Buyer Awareness",
-title:"7 Common Mistakes First Time Home Buyers Must Avoid",
-excerpt:"Avoid costly financial mistakes when buying your first property in India.",
-content:`
-<h3>7 Common Mistakes First Time Buyers Must Avoid</h3>
+            <h4>4. Early EMIs are Interest-Heavy</h4>
+            <p>In the initial years, a major share of your EMI pays interest. Early prepayments are powerful because they attack the principal directly.</p>
+        `
+    },
+    {
+        id: 4,
+        category: "Buyer Awareness",
+        title: "Why 90% Buyers Overpay & How To Avoid It",
+        excerpt: "Real estate is an information-driven market. Learn why emotional attachment and lack of research lead to overpaying.",
+        content: `
+            <h3>Why 90% Buyers Overpay & How To Avoid It</h3>
+            <p class="author-tag">By Asquaree</p>
+            <p>The difference between a smart investor and an overpaying buyer lies in knowledge and strategy.</p>
+            
+            <h4>1. Emotional vs. Strategic Decisions</h4>
+            <p>Falling in love with a property leads to ignoring price comparisons. Treat property as both a lifestyle and financial decision.</p>
 
-<h4>Ignoring Total Cost</h4>
-<p>Consider GST, stamp duty, maintenance deposit and interior costs.</p>
+            <h4>2. Artificial Urgency</h4>
+            <p>"Last few units left" is often a marketing tactic. Good decisions should never be forced by artificial pressure.</p>
 
-<h4>Taking Maximum Loan</h4>
-<p>Approval limit does not mean affordability.</p>
+            <h4>3. Total Cost of Ownership</h4>
+            <p>Overpaying often happens by ignoring GST, registration, club memberships, and maintenance deposits. Calculate the 'all-in' price.</p>
 
-<h4>Not Checking Builder Reputation</h4>
-<p>Research delivery record and past projects.</p>
+            <h4>4. The Myth of Fixed Pricing</h4>
+            <p>In many cycles, prices are negotiable. Research recent transactions in the same project to find the true market value.</p>
+        `
+    },
+    {
+        id: 5,
+        category: "Legal & Compliance",
+        title: "RERA Compliance: What Every Buyer Must Check",
+        excerpt: "RERA has brought accountability, but the protection only works if you know what to verify. Check these 7 points.",
+        content: `
+            <h3>RERA Compliance: What Every Buyer Must Check</h3>
+            <p class="author-tag">By Asquaree</p>
+            <p>RERA has transformed the market, but buyers must be proactive in verification.</p>
+            
+            <h4>1. Verify the Registration Number</h4>
+            <p>Ensure the project has a valid RERA number on the official state portal before making any payment.</p>
 
-<h4>No Resale Planning</h4>
-<p>Think about future exit value.</p>
+            <h4>2. Check the Escrow Account</h4>
+            <p>Under RERA, 70% of funds must be kept in a dedicated account for that project alone, preventing diversion of money.</p>
 
-<h4>Buying Emotionally</h4>
-<p>Think like an investor, not only a homeowner.</p>
-`
-},
-{
-id:4,
-category:"Investment Strategy",
-title:"How to Choose the Right Property for Investment in 2026",
-excerpt:"Guide to selecting high-growth locations and comparing ready vs under-construction property.",
-content:`
-<h3>How to Choose the Right Property for Investment in 2026</h3>
+            <h4>3. The Carpet Area Rule</h4>
+            <p>Developers must sell based on 'Carpet Area' (usable space), not 'Super Built-up Area'. Ensure you aren't paying for common areas as living space.</p>
 
-<h4>High Growth Areas</h4>
-<p>Look near metro stations, IT hubs, business districts and expressways.</p>
-
-<h4>Under Construction Property</h4>
-<p>Lower entry cost and higher appreciation potential.</p>
-
-<h4>Ready to Move Property</h4>
-<p>No waiting period and immediate rental income.</p>
-
-<p>Align property purchase with financial goals.</p>
-`
-},
-{
-id:5,
-category:"Expert Advice",
-title:"Real Estate Investment Tips for First Time Buyers (Expert Advice)",
-excerpt:"Expert tips on building wealth through property and minimizing investment risk.",
-content:`
-<h3>Real Estate Investment Tips for First Time Buyers</h3>
-
-<h4>Start Early</h4>
-<p>Earlier investment leads to stronger long-term appreciation.</p>
-
-<h4>Think Long Term</h4>
-<p>Hold property for 5–10 years minimum.</p>
-
-<h4>Diversify Later</h4>
-<p>After first home, explore commercial, rental or plot investments.</p>
-
-<h4>Take Professional Advisory</h4>
-<p>Expert guidance helps negotiate better prices and plan exit strategy.</p>
-`
-}
+            <h4>4. Declared Possession Date</h4>
+            <p>Verify the completion timeline on the RERA portal. Developers are legally liable for compensation if they miss this date.</p>
+        `
+    }
 ];
 
-function renderJournal(){
-const grid=document.getElementById("journal-grid");
-if(!grid) return;
+function renderJournal() {
+    const grid = document.getElementById("journal-grid");
+    if (!grid) return;
+    grid.innerHTML = ""; // Clear existing blogs
 
-journalData.forEach(post=>{
-const card=document.createElement("div");
-card.className="journal-card";
-card.onclick=()=>openJournalModal(post.id);
+    journalData.forEach(post => {
+        const card = document.createElement("div");
+        card.className = "journal-card reveal";
+        card.onclick = (e) => {
+            e.stopPropagation();
+            openJournalModal(post.id);
+        };
 
-card.innerHTML=`
-<div class="journal-category">${post.category}</div>
-<div class="journal-title">${post.title}</div>
-<div class="journal-excerpt">${post.excerpt}</div>
-<div class="journal-read">Read Article</div>
-`;
-
-grid.appendChild(card);
-});
+        card.innerHTML = `
+            <div class="journal-category">${post.category}</div>
+            <div class="journal-title">${post.title}</div>
+            <div class="journal-excerpt">${post.excerpt}</div>
+            <div class="journal-read">Read Article <i class="fa-solid fa-arrow-right-long" style="margin-left:8px; font-size:0.8rem;"></i></div>
+        `;
+        grid.appendChild(card);
+    });
 }
 
-function openJournalModal(id){
-const post=journalData.find(p=>p.id===id);
-if(!post) return;
+function openJournalModal(id) {
+    const post = journalData.find(p => p.id === id);
+    if (!post) return;
 
-document.getElementById("journalArticle").innerHTML=post.content;
-document.getElementById("journalModal").classList.add("active");
+    const modal = document.getElementById("journalModal");
+    const content = document.getElementById("journalArticle");
+    
+    content.innerHTML = post.content;
+    modal.classList.add("active");
+    document.body.classList.add("modal-open");
+
+    // Close on background click
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            closeJournalModal();
+        }
+    };
 }
 
-function closeJournalModal(){
-document.getElementById("journalModal").classList.remove("active");
+function closeJournalModal() {
+    const modal = document.getElementById("journalModal");
+    modal.classList.remove("active");
+    document.body.classList.remove("modal-open");
 }
 
-document.addEventListener("DOMContentLoaded",renderJournal);
+document.addEventListener("DOMContentLoaded", renderJournal);

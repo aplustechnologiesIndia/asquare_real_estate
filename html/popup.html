@@ -1,0 +1,52 @@
+<div id="leadPopup" class="popup-overlay">
+    <div class="popup-content lead-form-container">
+        <button class="close-popup" id="closeLeadPopup">✕ Skip</button>
+        
+        <div class="popup-header">
+            <img src="assets/logo.png" alt="ASQUAREE Logo" class="popup-logo">
+            <h3>Exclusive Consultation</h3>
+            <p>Find your perfect property with our expert advisors</p>
+            <div class="gold-line"></div>
+        </div>
+
+        <form id="leadCaptureForm" class="popup-form">
+            <div class="form-row">
+                <input type="text" name="user_name" placeholder="Full Name *" required>
+                <input type="tel" name="user_mobile" placeholder="Mobile Number *" required pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-row">
+                <select name="property_type">
+                    <option value="" disabled selected>Property Interest</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                </select>
+                <select name="construction_status">
+                    <option value="" disabled selected>Status</option>
+                    <option value="Ready to Move">Ready to Move</option>
+                    <option value="Under Construction">Under Construction</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <select name="location" required>
+                    <option value="" disabled selected>Preferred Location</option>
+                    <option value="NOIDA">NOIDA</option>
+                    <option value="GR NOIDA">GR NOIDA</option>
+                    <option value="GURGAON">GURGAON</option>
+                    <option value="DELHI">DELHI</option>
+                    <option value="GHAZIABAD">GHAZIABAD</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <input type="text" name="property_size" placeholder="Preferred Size (sqft)">
+                <input type="text" name="budget" placeholder="Budget (e.g. 1.5 Cr)">
+            </div>
+
+            <button type="submit" class="btn-gold full-width">Request Instant Callback</button>
+        </form>
+        
+        <p class="form-note">* Your information is kept strictly confidential.</p>
+    </div>
+</div>

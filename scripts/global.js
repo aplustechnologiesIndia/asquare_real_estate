@@ -5,6 +5,7 @@
 // Locate this array in scripts/global.js and update the order:
 const sectionsToLoad = [
     'home',         // Home Page + Numbers (Stats Bar is inside home.html)
+    'popup',
     'about',        // About Us + Team
     'services',     // Your new Services section
     'collection',    // Focus Projects

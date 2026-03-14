@@ -1,0 +1,60 @@
+.lead-form-container {
+    max-width: 600px !important;
+    padding: 40px !important;
+    border-radius: 4px;
+    background: #0f0f0f !important;
+}
+
+.popup-logo {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.popup-header h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.popup-form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.popup-form input, .popup-form select {
+    flex: 1;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 12px 15px;
+    color: var(--white);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.popup-form input:focus, .popup-form select:focus {
+    border-color: var(--gold);
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-note {
+    font-size: 0.7rem;
+    color: var(--gray);
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row { flex-direction: column; gap: 10px; }
+    .lead-form-container { padding: 30px 20px !important; }
+}

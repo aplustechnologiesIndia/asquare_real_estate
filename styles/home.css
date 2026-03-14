@@ -165,3 +165,42 @@
     will-change: transform, opacity; /* Performance optimization for smoother frames */
     animation: revealBranding 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Enhanced Responsive Mobile Branding */
+@media (max-width: 768px) {
+    .hero-container {
+        padding-top: 40px; /* Reduced to prevent pushing content too far down */
+        width: 100%;
+        overflow: hidden; /* Prevents text overflow */
+    }
+
+    .branding-stack img {
+        height: 100px !important; /* Forces a manageable logo height on small screens */
+        width: auto !important;
+        margin-bottom: 10px !important;
+    }
+
+    .company-name {
+        font-size: 1.8rem !important; /* Significantly reduced to fit narrow screens */
+        letter-spacing: 4px !important; /* Tighter tracking for mobile readability */
+        line-height: 1.2;
+        width: 90%; /* Keeps text within safe margins */
+    }
+
+    .company-tagline {
+        font-size: 0.7rem !important; /* Scaled down tagline */
+        letter-spacing: 2px !important;
+        margin-top: 5px !important;
+    }
+}

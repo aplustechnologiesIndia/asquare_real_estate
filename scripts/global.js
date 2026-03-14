@@ -2,14 +2,16 @@
 // GLOBAL PAGE ASSEMBLER
 // ===============================
 
+// Locate this array in scripts/global.js and update the order:
 const sectionsToLoad = [
-    'home',
-    'about',
-    'collection',
-    'reviews',
-    'blog',
-    'enquire',
-    'contact'
+    'home',         // Home Page + Numbers (Stats Bar is inside home.html)
+    'about',        // About Us + Team
+    'services',     // Your new Services section
+    'collection',    // Focus Projects
+    'reviews',      // Reviews (now following Projects)
+    'blog',         // Blogs
+    'enquire',      // Enquire
+    'contact'       // Footer Info
 ];
 
 const appContent = document.getElementById('app-content');

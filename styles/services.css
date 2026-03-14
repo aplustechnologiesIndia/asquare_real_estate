@@ -1,0 +1,81 @@
+.services-section {
+    padding: 100px 5%;
+    background: var(--black);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: var(--charcoal);
+    border: 1px solid #1a1a1a;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gold);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-list li {
+    font-size: 0.9rem;
+    color: var(--white);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.service-list li::before {
+    content: "→";
+    color: var(--gold);
+    position: absolute;
+    left: 0;
+}
+
+.service-footer {
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    font-size: 0.85rem !important;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

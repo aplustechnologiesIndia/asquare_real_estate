@@ -5,7 +5,7 @@ function initLeadPopup() {
 
     if (!modal) return;
 
-    // Show after 3 seconds
+    // Show after 3 seconds for EVERY user on EVERY refresh
     setTimeout(() => {
         modal.classList.add('active');
         document.body.classList.add('modal-open');
@@ -17,7 +17,7 @@ function initLeadPopup() {
         document.body.classList.remove('modal-open');
     };
 
-    closeBtn.onclick = closePopup;
+    if (closeBtn) closeBtn.onclick = closePopup;
 
     // Close on background click
     modal.onclick = (e) => {
@@ -25,25 +25,28 @@ function initLeadPopup() {
     };
 
     // Form Submission
-    form.onsubmit = async (e) => {
-        e.preventDefault();
-        const submitBtn = form.querySelector('button');
-        submitBtn.innerText = "Sending...";
-        submitBtn.disabled = true;
+    if (form) {
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const submitBtn = form.querySelector('button');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Sending...";
+            submitBtn.disabled = true;
 
-        try {
-            // Replace with your ServiceID and TemplateID
-            await emailjs.sendForm('default_service', 'YOUR_TEMPLATE_ID', form);
-            alert("Thank you! Our expert will contact you shortly.");
-            closePopup();
-        } catch (err) {
-            console.error("Submission failed:", err);
-            alert("Submission error. Please try again.");
-            submitBtn.innerText = "Request Instant Callback";
-            submitBtn.disabled = false;
-        }
-    };
+            try {
+                // Replace with your actual EmailJS IDs
+                await emailjs.sendForm('default_service', 'YOUR_TEMPLATE_ID', form);
+                alert("Thank you! Our expert will contact you shortly.");
+                closePopup();
+            } catch (err) {
+                console.error("Submission failed:", err);
+                alert("Submission error. Please try again.");
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        };
+    }
 }
 
-// Global initialization
-window.addEventListener('load', initLeadPopup);
+// Ensure it can be initialized manually by the global assembler
+window.initLeadPopup = initLeadPopup;

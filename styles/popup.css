@@ -58,3 +58,10 @@
     .form-row { flex-direction: column; gap: 10px; }
     .lead-form-container { padding: 30px 20px !important; }
 }
+
+
+
+
+body.modal-open {
+    overflow: hidden;
+}

@@ -83,16 +83,19 @@ function loadScript(src) {
 // ===============================
 
 function initSection(section) {
-
     if (section === 'home' && typeof initHomeStats === "function") {
         initHomeStats();
+    }
+
+    // Add this block for the popup
+    if (section === 'popup' && typeof initLeadPopup === "function") {
+        initLeadPopup();
     }
 
     if (section === 'about' && typeof initAboutReveal === "function") {
         initAboutReveal();
     }
 
-    // 🔥 IMPORTANT FIX FOR JOURNAL
     if (section === 'blog' && typeof renderJournal === "function") {
         renderJournal();
     }

@@ -65,3 +65,47 @@
 body.modal-open {
     overflow: hidden;
 }
+
+
+/* Update these blocks in styles/popup.css */
+
+.popup-overlay {
+    /* ... existing styles ... */
+    padding: 20px; /* Provides a gap so user can click outside to close */
+    overflow-y: auto; /* Allows the overlay itself to scroll if the content is too tall */
+    align-items: flex-start; /* Better for long forms on mobile so they start at the top */
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.lead-form-container {
+    max-width: 600px !important;
+    width: 100%; /* Ensures it takes full width up to the max-width */
+    padding: 40px !important;
+    border-radius: 4px;
+    background: #0f0f0f !important;
+    position: relative;
+    margin: auto; /* Centers the box within the padded overlay */
+}
+
+/* Specific Mobile Fixes */
+@media (max-width: 600px) {
+    .lead-form-container {
+        padding: 30px 20px !important;
+        width: 90%; /* Leaves 5% space on each side */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .form-row { 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
+
+
+
+body.modal-open {
+    overflow: hidden; /* Prevents the main website from scrolling in the background */
+    height: 100vh;
+}

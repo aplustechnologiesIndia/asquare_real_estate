@@ -216,3 +216,35 @@ window.addEventListener('scroll', () => {
 // ===============================
 
 document.addEventListener('DOMContentLoaded', assemblePage);
+
+
+// ===============================
+// WHATSAPP REDIRECTION UTILITY
+// ===============================
+
+/**
+ * Global Utility for WhatsApp Redirection
+ * @param {Object} data - The form data object
+ * @param {string} formName - To identify which form sent the lead
+ */
+window.sendToWhatsApp = function(data, formName) {
+    const clientId = "919315362587"; // Your client's primary number (without + or spaces)
+    let message = `*New Lead from ASQUAREE (${formName})*\n\n`;
+
+    // Loop through the data object to build the message
+    for (const [key, value] of Object.entries(data)) {
+        if (value) {
+            // Clean up keys for better readability (e.g., user_name -> Name)
+            const label = key.replace('user_', '').replace('_', ' ').toUpperCase();
+            message += `*${label}:* ${value}\n`;
+        }
+    }
+
+    message += `\n_Please contact this user for a callback._`;
+
+    // Encode and Redirect
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${clientId}?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+};

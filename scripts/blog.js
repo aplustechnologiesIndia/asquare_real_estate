@@ -6,9 +6,9 @@ const journalData = [
         excerpt: "Buying real estate is one of the biggest financial decisions a person makes. Discover the truths every buyer should know before investing.",
         content: `
             <h3>Real Estate vs Reality – Truth Buyers Should Know</h3>
-            <p class="author-tag">By Asquaree</p>
+            <p class="author-tag">By ASQUAREE</p>
             <p>Buying real estate is one of the biggest financial decisions a person makes in life. For most people, it is not just a purchase—it is a dream of security, status, and long-term wealth. However, between the expectations created in the market and the actual ground reality, there is often a significant gap.</p>
-            <p>At Asquaree, we believe informed buyers make better decisions. So let’s talk honestly about Real Estate vs Reality—the truths every buyer should know before investing.</p>
+            <p>At ASQUAREE, we believe informed buyers make better decisions. So let's talk honestly about Real Estate vs Reality—the truths every buyer should know before investing.</p>
             
             <h4>1. Myth: Real Estate Prices Always Go Up</h4>
             <p><strong>Reality:</strong><br>While real estate has historically appreciated over long periods, prices do not increase every year. Markets move in cycles influenced by interest rates, economic conditions, infrastructure development, and demand-supply dynamics.</p>
@@ -75,8 +75,8 @@ const journalData = [
             </ul>
             <p>Real estate works best when logic and lifestyle needs meet together.</p>
 
-            <h4>The Asquaree Perspective</h4>
-            <p>At Asquaree, our approach is simple: transparency over hype. We believe buyers deserve:</p>
+            <h4>The ASQUAREE Perspective</h4>
+            <p>At ASQUAREE, our approach is simple: transparency over hype. We believe buyers deserve:</p>
             <ul>
                 <li>Clear information</li>
                 <li>Honest advice</li>
@@ -86,7 +86,7 @@ const journalData = [
 
             <h4>Final Thought</h4>
             <p>Real estate is not about chasing trends—it is about making well-informed decisions. When buyers understand the difference between market perception and market reality, they invest with confidence and clarity. And that is exactly where the right advisory partner makes all the difference.</p>
-            <p><strong>Asquaree – Helping You Make Smarter Real Estate Decisions.</strong></p>
+            <p><strong>ASQUAREE – Helping You Make Smarter Real Estate Decisions.</strong></p>
         `
     },
     {
@@ -96,9 +96,9 @@ const journalData = [
         excerpt: "Real estate remains a trusted way to build wealth. Here are the key factors every buyer should evaluate before investing in 2026.",
         content: `
             <h3>How to Choose a Profitable Investment Property in 2026</h3>
-            <p class="author-tag">By Asquaree</p>
+            <p class="author-tag">By ASQUAREE</p>
             <p>Real estate continues to remain one of the most trusted ways to build long-term wealth. However, in 2026 the market is more informed, competitive, and data-driven than ever before. Investors today cannot rely only on instinct or market hype. Choosing a profitable investment property requires research, strategy, and clarity about long-term value.</p>
-            <p>At Asquaree, we believe that smart investors focus on fundamentals. Here are the key factors every buyer should evaluate before investing in real estate in 2026.</p>
+            <p>At ASQUAREE, we believe that smart investors focus on fundamentals. Here are the key factors every buyer should evaluate before investing in real estate in 2026.</p>
             
             <h4>1. Location Still Matters the Most</h4>
             <p>The most important rule of real estate remains unchanged: location determines long-term profitability.</p>
@@ -126,7 +126,7 @@ const journalData = [
             <h4>3. Check Developer Credibility</h4>
             <p>A profitable investment also depends on the reliability of the developer. Before investing, buyers should evaluate:</p>
             <ul>
-                <li>The developer’s past projects</li>
+                <li>The developer's past projects</li>
                 <li>Delivery track record</li>
                 <li>Construction quality</li>
                 <li>Financial stability</li>
@@ -167,8 +167,8 @@ const journalData = [
             <p>Unlike stocks, real estate wealth is built through patience and strategic holding periods.</p>
             <p>Successful investors typically hold property for 5–10 years, allowing infrastructure development and economic growth to increase property value. Real estate rewards disciplined investors who focus on long-term fundamentals rather than short-term speculation.</p>
 
-            <h4>The Asquaree Approach</h4>
-            <p>At Asquaree, we guide investors through a research-driven property selection process. Our focus is not just selling property but helping clients identify opportunities that offer:</p>
+            <h4>The ASQUAREE Approach</h4>
+            <p>At ASQUAREE, we guide investors through a research-driven property selection process. Our focus is not just selling property but helping clients identify opportunities that offer:</p>
             <ul>
                 <li>Strong appreciation potential</li>
                 <li>Sustainable rental income</li>
@@ -180,19 +180,19 @@ const journalData = [
             <h4>Final Thoughts</h4>
             <p>Choosing a profitable investment property in 2026 requires more than just buying real estate—it requires buying the right real estate.</p>
             <p>By focusing on location growth, developer credibility, rental demand, and long-term fundamentals, investors can turn property ownership into a powerful wealth-building strategy. With the right guidance and careful planning, real estate can remain one of the most rewarding investments of the decade.</p>
-            <p><strong>Asquaree – Helping You Invest in the Right Property, Not Just Any Property.</strong></p>
+            <p><strong>ASQUAREE – Helping You Invest in the Right Property, Not Just Any Property.</strong></p>
         `
     },
     {
         id: 3,
         category: "Finance & Loans",
-        title: "Home Loan Secrets Banks Don’t Tell You",
+        title: "Home Loan Secrets Banks Don't Tell You",
         excerpt: "Understanding hidden details about interest structures and prepayments can save you significant money and make smarter financial decisions.",
         content: `
-            <h3>Home Loan Secrets Banks Don’t Tell You</h3>
-            <p class="author-tag">By Asquaree</p>
+            <h3>Home Loan Secrets Banks Don't Tell You</h3>
+            <p class="author-tag">By ASQUAREE</p>
             <p>For most homebuyers, a home loan is the bridge between the dream of owning a home and making it a reality. Banks and financial institutions make the process look simple—apply, get approved, and move into your dream home. However, there are several important aspects of home loans that are rarely discussed openly.</p>
-            <p>Understanding these hidden details can help buyers save significant money and make smarter financial decisions. At Asquaree, we believe informed buyers make confident investors. Here are some home loan secrets banks usually don’t highlight.</p>
+            <p>Understanding these hidden details can help buyers save significant money and make smarter financial decisions. At ASQUAREE, we believe informed buyers make confident investors. Here are some home loan secrets banks usually don't highlight.</p>
             
             <h4>1. Your Loan Eligibility Is Negotiable</h4>
             <p>Many buyers assume the loan amount offered by the bank is final. In reality, loan eligibility often varies between lenders. Different banks use different parameters such as:</p>
@@ -255,8 +255,8 @@ const journalData = [
             </ul>
             <p>Choosing the shortest comfortable tenure can save substantial money in the long run.</p>
 
-            <h4>The Asquaree Perspective</h4>
-            <p>At Asquaree, we believe property buying should be transparent and financially intelligent. Before choosing a home loan, buyers should focus on:</p>
+            <h4>The ASQUAREE Perspective</h4>
+            <p>At ASQUAREE, we believe property buying should be transparent and financially intelligent. Before choosing a home loan, buyers should focus on:</p>
             <ul>
                 <li>Comparing lenders carefully</li>
                 <li>Understanding the true cost of borrowing</li>
@@ -267,7 +267,7 @@ const journalData = [
 
             <h4>Final Thought</h4>
             <p>Buying a home is a milestone, but financing it wisely is just as important. When buyers understand the real structure of home loans, they gain the power to make smarter financial decisions, reduce interest costs, and build wealth through real estate.</p>
-            <p><strong>Asquaree – Guiding You Toward Smarter Property Decisions.</strong></p>
+            <p><strong>ASQUAREE – Guiding You Toward Smarter Property Decisions.</strong></p>
         `
     },
     {
@@ -277,9 +277,9 @@ const journalData = [
         excerpt: "A large percentage of buyers end up paying more than market value. Understanding why buyers overpay is the first step toward a better decision.",
         content: `
             <h3>Why 90% Buyers Overpay & How To Avoid It</h3>
-            <p class="author-tag">By Asquaree</p>
-            <p>Buying a property is one of the most important financial decisions in a person’s life. Yet, surprisingly, a large percentage of buyers end up paying more than the actual market value of the property they purchase. This often happens not because buyers are careless, but because the real estate market is complex, emotional, and information-driven.</p>
-            <p>At Asquaree, we believe the difference between a smart buyer and an overpaying buyer lies in knowledge, timing, and strategy. Understanding why buyers overpay is the first step toward making a better investment decision.</p>
+            <p class="author-tag">By ASQUAREE</p>
+            <p>Buying a property is one of the most important financial decisions in a person's life. Yet, surprisingly, a large percentage of buyers end up paying more than the actual market value of the property they purchase. This often happens not because buyers are careless, but because the real estate market is complex, emotional, and information-driven.</p>
+            <p>At ASQUAREE, we believe the difference between a smart buyer and an overpaying buyer lies in knowledge, timing, and strategy. Understanding why buyers overpay is the first step toward making a better investment decision.</p>
             
             <h4>1. Emotional Buying Instead of Strategic Buying</h4>
             <p>For many people, buying a home is deeply emotional. Once buyers fall in love with a property, they often stop evaluating it objectively. This emotional attachment can lead to:</p>
@@ -294,7 +294,7 @@ const journalData = [
             <p>One of the biggest reasons buyers overpay is simply not understanding the local market price. Many buyers rely only on the information provided by:</p>
             <ul>
                 <li>Sales representatives</li>
-                <li>Builders’ marketing campaigns</li>
+                <li>Builders' marketing campaigns</li>
                 <li>Online advertisements</li>
             </ul>
             <p>However, actual property values depend on multiple factors such as:</p>
@@ -308,9 +308,9 @@ const journalData = [
             <h4>3. Falling for Limited-Time Offers</h4>
             <p>Developers often promote offers like:</p>
             <ul>
-                <li>“Last few units left”</li>
-                <li>“Price increasing next week”</li>
-                <li>“Special festival discount”</li>
+                <li>"Last few units left"</li>
+                <li>"Price increasing next week"</li>
+                <li>"Special festival discount"</li>
             </ul>
             <p>While some offers may be genuine, many are designed to create urgency. When buyers feel rushed, they make decisions faster and negotiate less. The most successful investors understand that good decisions should never be forced by artificial urgency.</p>
 
@@ -338,7 +338,7 @@ const journalData = [
             <p>Beautiful brochures, attractive advertisements, and impressive sample flats can strongly influence buyers. However, marketing highlights the best version of the project, not always the full picture. Buyers should evaluate:</p>
             <ul>
                 <li>Construction quality</li>
-                <li>Builder’s past delivery record</li>
+                <li>Builder's past delivery record</li>
                 <li>Project approvals and legal clarity</li>
                 <li>Actual carpet area versus super area</li>
             </ul>
@@ -356,8 +356,8 @@ const journalData = [
             </ul>
             <p>These steps help buyers identify true value rather than perceived value.</p>
 
-            <h4>The Asquaree Approach</h4>
-            <p>At Asquaree, our goal is not just to help clients buy property, but to help them buy the right property at the right value. We guide buyers through:</p>
+            <h4>The ASQUAREE Approach</h4>
+            <p>At ASQUAREE, our goal is not just to help clients buy property, but to help them buy the right property at the right value. We guide buyers through:</p>
             <ul>
                 <li>Market price analysis</li>
                 <li>Project comparisons</li>
@@ -368,7 +368,7 @@ const journalData = [
 
             <h4>Final Thought</h4>
             <p>In real estate, overpaying is more common than most people realize. But with the right knowledge and guidance, buyers can avoid this costly mistake. When buyers focus on research, patience, and informed decision-making, they turn property purchases into smart long-term investments.</p>
-            <p><strong>Asquaree – Helping You Make Smarter Real Estate Decisions.</strong></p>
+            <p><strong>ASQUAREE – Helping You Make Smarter Real Estate Decisions.</strong></p>
         `
     },
     {
@@ -378,12 +378,12 @@ const journalData = [
         excerpt: "RERA has brought accountability to the sector, but buyers still need to verify details. Here are the key RERA checks to protect your investment.",
         content: `
             <h3>RERA Compliance: What Every Buyer Must Check</h3>
-            <p class="author-tag">By Asquaree</p>
+            <p class="author-tag">By ASQUAREE</p>
             <p>Buying property used to be one of the most uncertain decisions for many homebuyers. Delayed projects, misleading promises, and lack of transparency often created confusion and financial risk. To address these issues and bring accountability to the sector, the Real Estate (Regulation and Development) Act, 2016 (RERA) was introduced.</p>
-            <p>RERA has significantly improved transparency in the real estate market. However, many buyers still do not fully understand what they should verify before investing in a project. At Asquaree, we believe every buyer should know the key RERA checks that protect their investment.</p>
+            <p>RERA has significantly improved transparency in the real estate market. However, many buyers still do not fully understand what they should verify before investing in a project. At ASQUAREE, we believe every buyer should know the key RERA checks that protect their investment.</p>
             
             <h4>1. Verify RERA Registration of the Project</h4>
-            <p>The first and most important step is to confirm whether the project is RERA registered. Under the RERA law, most residential and commercial real estate projects must be registered with the state’s RERA authority before being marketed or sold.</p>
+            <p>The first and most important step is to confirm whether the project is RERA registered. Under the RERA law, most residential and commercial real estate projects must be registered with the state's RERA authority before being marketed or sold.</p>
             <p>A registered project receives a unique RERA registration number, which buyers can verify on the official state RERA website. This registration ensures that the project follows regulatory guidelines and provides transparency regarding approvals and timelines.</p>
 
             <h4>2. Check Project Details on the RERA Website</h4>
@@ -413,14 +413,14 @@ const journalData = [
             <p>For buyers, this ensures greater clarity about the actual space they are paying for.</p>
 
             <h4>5. Verify Developer Track Record</h4>
-            <p>RERA portals also provide information about the developer’s past projects and track record. Buyers should review:</p>
+            <p>RERA portals also provide information about the developer's past projects and track record. Buyers should review:</p>
             <ul>
                 <li>Completed projects</li>
                 <li>Ongoing developments</li>
                 <li>Delivery history</li>
                 <li>Past delays or complaints</li>
             </ul>
-            <p>A developer’s history often reveals important insights about project reliability and credibility.</p>
+            <p>A developer's history often reveals important insights about project reliability and credibility.</p>
 
             <h4>6. Check Financial Safeguards for Buyers</h4>
             <p>Under RERA regulations, developers must deposit 70% of the funds collected from buyers into a dedicated escrow account. This money can only be used for construction and land costs related to that specific project.</p>
@@ -436,8 +436,8 @@ const journalData = [
             </ul>
             <p>Understanding these rights helps buyers approach property transactions with greater confidence.</p>
 
-            <h4>The Asquaree Approach</h4>
-            <p>At Asquaree, we prioritize transparency and informed decision-making. Before recommending any property, we ensure that buyers have access to:</p>
+            <h4>The ASQUAREE Approach</h4>
+            <p>At ASQUAREE, we prioritize transparency and informed decision-making. Before recommending any property, we ensure that buyers have access to:</p>
             <ul>
                 <li>Verified RERA project information</li>
                 <li>Developer credibility analysis</li>
@@ -449,7 +449,7 @@ const journalData = [
             <h4>Final Thought</h4>
             <p>RERA has transformed the Indian real estate market by introducing greater accountability and transparency. But the law can only protect buyers when they actively verify the details available.</p>
             <p>By checking RERA registration, project disclosures, developer history, and possession timelines, buyers can significantly reduce risk and invest with confidence.</p>
-            <p><strong>Asquaree – Your Partner in Transparent Real Estate Decisions.</strong></p>
+            <p><strong>ASQUAREE – Your Partner in Transparent Real Estate Decisions.</strong></p>
         `
     }
 ];
